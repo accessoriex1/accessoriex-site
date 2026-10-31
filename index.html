@@ -1,0 +1,520 @@
+<title>Accessoriex</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Bedding and night-routine picks chosen from TikTok Shop best-seller data. Updated weekly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lamp-lit night page. Split hero, then category "rooms" that alternate photo and list, a size-guide table, signup, disclosures. */
+:root {
+  --bg: #13151d;          /* blue-black, the room after lights out */
+  --surface: #1b1e29;
+  --surface-2: #232736;
+  --fg: #ede6da;          /* warm linen */
+  --muted: #a39b8e;
+  --line: rgba(237, 230, 218, 0.12);
+  --accent: #e8b56c;      /* bedside-lamp amber */
+  --accent-ink: #1a1408;
+  --glow: rgba(232, 181, 108, 0.18);
+  --sage: #9db3a1;
+  --font-display: "Gloock", "Georgia", "Times New Roman", serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.1rem, 4vw, 3rem);
+  --step-4: clamp(2.8rem, 7vw, 5.6rem);
+  --radius: 14px;
+  --max: 1180px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f1eee8; --surface: #ffffff; --surface-2: #e9e5dc; --fg: #1b1d27; --muted: #5f5a52;
+    --line: rgba(27, 29, 39, 0.12); --accent: #9a5b12; --accent-ink: #fff8ee; --glow: rgba(154, 91, 18, 0.12); --sage: #4f6b57;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f1eee8; --surface: #ffffff; --surface-2: #e9e5dc; --fg: #1b1d27; --muted: #5f5a52;
+  --line: rgba(27, 29, 39, 0.12); --accent: #9a5b12; --accent-ink: #fff8ee; --glow: rgba(154, 91, 18, 0.12); --sage: #4f6b57;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+p { margin: 0; }
+
+.wrap {
+  max-width: var(--max); margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
+.brand-mark { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, var(--accent), transparent 70%), var(--surface-2); box-shadow: 0 0 22px var(--glow); }
+.nav { display: flex; gap: 24px; align-items: center; }
+.nav a { text-decoration: none; font-size: 0.95rem; color: var(--muted); }
+.nav a:hover { color: var(--fg); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font: 600 0.95rem/1 var(--font-body); text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { border-color: var(--line); color: var(--fg); background: transparent; }
+.btn-ghost:hover { border-color: var(--accent); }
+.btn-small { padding: 9px 16px; font-size: 0.875rem; }
+@media (max-width: 760px) { .nav .nav-link { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(40px, 7vw, 88px); overflow-x: clip; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.hero-copy { display: grid; gap: 24px; min-width: 0; }
+.hero h1 { font-size: var(--step-4); }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-lede { font-size: var(--step-1); color: var(--muted); max-width: 34ch; line-height: 1.5; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-figure { position: relative; margin: 0; }
+.hero-figure::before { content: ""; position: absolute; inset: -12% -8% auto auto; width: 70%; aspect-ratio: 1; background: radial-gradient(circle, var(--glow), transparent 65%); pointer-events: none; }
+.hero-figure img { position: relative; border-radius: 22px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; max-width: 100%; }
+.hero-stamp { position: absolute; left: -18px; bottom: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; display: grid; gap: 2px; box-shadow: 0 18px 40px rgba(0,0,0,.28); }
+.hero-stamp strong { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; }
+.hero-stamp span { font-size: var(--step--1); color: var(--muted); }
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-figure img { aspect-ratio: 16 / 10; }
+  .hero-stamp { left: 12px; bottom: 12px; }
+}
+
+.disclosure-bar { border-block: 1px solid var(--line); background: var(--surface); }
+.disclosure-bar .wrap { padding-block: 12px; font-size: var(--step--1); color: var(--muted); }
+
+/* Rooms */
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.section-head { display: grid; gap: 12px; margin-bottom: 40px; max-width: 46rem; }
+.section-head h2 { font-size: var(--step-3); }
+.section-head p { color: var(--muted); max-width: 60ch; }
+
+.rooms { display: grid; gap: clamp(48px, 7vw, 96px); }
+.room { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.room.flip { grid-template-columns: 1.1fr 0.9fr; }
+.room.flip .room-photo { order: 2; }
+.room-photo { margin: 0; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 84px); }
+.room-photo img { border-radius: 18px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.room-photo figcaption { margin-top: 10px; font-size: var(--step--1); color: var(--muted); }
+.room-body { display: grid; gap: 20px; min-width: 0; }
+.room-title { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+.room-title h3 { font-size: var(--step-2); }
+@media (max-width: 860px) {
+  .room, .room.flip { grid-template-columns: 1fr; }
+  .room.flip .room-photo { order: 0; }
+  .room-photo { position: static; }
+  .room-photo img { aspect-ratio: 16 / 10; }
+}
+
+.pick { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.pick-main { display: grid; gap: 8px; min-width: 0; }
+.pick-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag-rank { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.pick h4 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1.45rem; line-height: 1.15; }
+.pick-brand { font-size: var(--step--1); color: var(--muted); font-family: var(--font-mono); letter-spacing: .04em; }
+.pick p { color: var(--muted); max-width: 52ch; }
+.pick-side { display: grid; gap: 10px; justify-items: end; align-content: start; text-align: right; }
+.price { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+.price small { display: block; color: var(--muted); font-size: 0.72rem; letter-spacing: .06em; text-transform: uppercase; }
+.btn-soon { border-color: var(--line); color: var(--muted); background: transparent; cursor: default; }
+@media (max-width: 560px) {
+  .pick { grid-template-columns: 1fr; }
+  .pick-side { justify-items: start; text-align: left; grid-auto-flow: column; align-items: center; justify-content: space-between; }
+}
+.fine { font-size: var(--step--1); color: var(--muted); }
+
+/* Size guide */
+.size-section { background: var(--surface); border-block: 1px solid var(--line); }
+.size-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.size-grid > * { min-width: 0; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-family: var(--font-mono); font-weight: 500; font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td { font-family: var(--font-mono); font-size: 0.95rem; }
+td:first-child { font-family: var(--font-body); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+.size-tips { display: grid; gap: 16px; }
+.size-tips h2 { font-size: var(--step-3); }
+.size-tips ol { margin: 0; padding-left: 1.2em; display: grid; gap: 10px; color: var(--muted); }
+.size-tips li::marker { color: var(--accent); font-family: var(--font-mono); }
+@media (max-width: 860px) { .size-grid { grid-template-columns: 1fr; } }
+
+/* Method */
+.method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.method-step { display: grid; gap: 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+.method-step .eyebrow { color: var(--accent); }
+.method-step h3 { font-size: 1.5rem; }
+.method-step p { color: var(--muted); }
+@media (max-width: 760px) { .method { grid-template-columns: 1fr; } }
+
+/* Signup */
+.signup { position: relative; overflow: hidden; border-radius: 24px; background: var(--surface-2); border: 1px solid var(--line); padding: clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; }
+.signup::before { content: ""; position: absolute; right: -10%; top: -40%; width: 60%; aspect-ratio: 1; background: radial-gradient(circle, var(--glow), transparent 65%); pointer-events: none; }
+.signup > * { position: relative; min-width: 0; }
+.signup h2 { font-size: var(--step-3); }
+.signup p { color: var(--muted); margin-top: 12px; }
+.signup form { display: grid; gap: 10px; }
+.field-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.field-row input { flex: 1 1 220px; min-width: 0; padding: 13px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: 400 1rem var(--font-body); }
+.field-row input::placeholder { color: var(--muted); }
+.form-note { font-size: var(--step--1); color: var(--muted); min-height: 1.4em; }
+.form-note.ok { color: var(--sage); }
+.form-note.err { color: var(--accent); }
+@media (max-width: 760px) { .signup { grid-template-columns: 1fr; } }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); margin-top: clamp(56px, 8vw, 104px); }
+.site-footer .wrap { padding-block: 40px 48px; display: grid; gap: 20px; }
+.footer-top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+.footer-links a:hover { color: var(--fg); }
+.legal { display: grid; gap: 8px; font-size: var(--step--1); color: var(--muted); max-width: 80ch; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * { animation: rise .7s ease both; }
+  .hero-copy > *:nth-child(2) { animation-delay: .08s; }
+  .hero-copy > *:nth-child(3) { animation-delay: .16s; }
+  .hero-copy > *:nth-child(4) { animation-delay: .24s; }
+  @keyframes rise { from { transform: translateY(10px); } to { transform: none; } }
+}
+</style>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Accessoriex, home"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a>
+    <nav class="nav" aria-label="Main">
+      <a class="nav-link" href="#sleep">Sleep</a>
+      <a class="nav-link" href="#lounge">Lounge</a>
+      <a class="nav-link" href="#routine">Night routine</a>
+      <a class="nav-link" href="#sizes">Size guide</a>
+      <a class="btn btn-primary btn-small" href="#weekly">Get the weekly 5</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">Home and comfort accessories · Updated weekly</span>
+        <h1>Sleep better. <em>Stay cozy.</em></h1>
+        <p class="hero-lede">We read the best-seller data so you don't have to. Every pick here ranked among TikTok Shop's top sellers in 2026, and every listing gets checked for size, materials and returns before it goes up.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#sleep">See this week's picks</a>
+          <a class="btn btn-ghost" href="#sizes">Check your bed size</a>
+        </div>
+      </div>
+      <figure class="hero-figure">
+        <img src="img/hero.webp" alt="A calm bedroom at sunrise with a fluffy white comforter on a low oak bed" width="1600" height="893">
+        <div class="hero-stamp">
+          <strong>5 picks</strong>
+          <span>from 2026 best-seller lists</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="disclosure-bar">
+    <div class="wrap">We may earn a commission when you buy through links on this page, at no extra cost to you. It never changes which products make the list.</div>
+  </div>
+
+  <section class="section" aria-labelledby="picks-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">This week's picks</span>
+        <h2 id="picks-title">Three rooms, five things worth the money</h2>
+        <p>Rankings come from FastMoss's quarterly US TikTok Shop best-seller reports. Price ranges are TikTok Shop listings at the time of each report. Amazon prices differ, so tap through for today's price.</p>
+      </div>
+
+      <div class="rooms">
+        <article class="room" id="sleep">
+          <figure class="room-photo">
+            <img src="img/comforter.webp" alt="A hand pressing into a thick, cloud-like white comforter" width="900" height="1125" loading="lazy">
+            <figcaption>Styled photo, not the product itself.</figcaption>
+          </figure>
+          <div class="room-body">
+            <div class="room-title"><h3>Sleep</h3><span class="eyebrow">2 picks</span></div>
+
+            <div class="pick">
+              <div class="pick-main">
+                <div class="pick-tags"><span class="tag tag-rank">Top 10 · Q2 2026</span><span class="tag">Comforter</span></div>
+                <h4>MarshMellow Comforter</h4>
+                <span class="pick-brand">Mellow Sleep</span>
+                <p>The splurge pick. A puffy, cloud-style comforter that cracked TikTok Shop's top 10 by sales at a price most bedding never reaches.</p>
+              </div>
+              <div class="pick-side">
+                <div class="price"><small>TikTok Shop range</small>$200 to $240</div>
+                <a class="btn btn-primary btn-small" data-product="comforter" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-ghost btn-small" data-tiktok="comforter" href="#weekly">TikTok Shop</a>
+              </div>
+            </div>
+
+            <div class="pick">
+              <div class="pick-main">
+                <div class="pick-tags"><span class="tag tag-rank">Top 10 · Q3 2026</span><span class="tag">Mattress topper</span></div>
+                <h4>Bamboo Cooling Mattress Topper</h4>
+                <span class="pick-brand">BEDLORE</span>
+                <p>For people who wake up warm. A bamboo-covered topper that sits on your current mattress, at a fraction of the cost of a new one.</p>
+              </div>
+              <div class="pick-side">
+                <div class="price"><small>TikTok Shop range</small>$36 to $64</div>
+                <a class="btn btn-primary btn-small" data-product="topper" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-ghost btn-small" data-tiktok="topper" href="#weekly">TikTok Shop</a>
+              </div>
+            </div>
+            <p class="fine">Measure your mattress before ordering bedding. Our size guide below has the standard US dimensions.</p>
+          </div>
+        </article>
+
+        <article class="room flip" id="lounge">
+          <figure class="room-photo">
+            <img src="img/blanket.webp" alt="An oat-colored sherpa-lined throw draped over a cream sofa beside a cup of tea" width="900" height="1117" loading="lazy">
+            <figcaption>Styled photo, not the product itself.</figcaption>
+          </figure>
+          <div class="room-body">
+            <div class="room-title"><h3>Lounge</h3><span class="eyebrow">1 pick</span></div>
+            <div class="pick">
+              <div class="pick-main">
+                <div class="pick-tags"><span class="tag tag-rank">#3 · Sept 2026</span><span class="tag">Throw blanket</span><span class="tag">Gift pick</span></div>
+                <h4>The Dreamer Blanket</h4>
+                <span class="pick-brand">Comfrt</span>
+                <p>An oversized throw from the comfort-wear brand Comfrt, and the third best-selling product on all of US TikTok Shop in September. The easiest gift on this page.</p>
+              </div>
+              <div class="pick-side">
+                <div class="price"><small>TikTok Shop range</small>$95 to $179</div>
+                <a class="btn btn-primary btn-small" data-product="blanket" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-ghost btn-small" data-tiktok="blanket" href="#weekly">TikTok Shop</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="room" id="routine">
+          <figure class="room-photo">
+            <img src="img/wellness.webp" alt="A nightstand with an amber glass jar, a cup of chamomile tea and a sprig of lavender" width="900" height="1117" loading="lazy">
+            <figcaption>Styled photo, not the product itself.</figcaption>
+          </figure>
+          <div class="room-body">
+            <div class="room-title"><h3>Night routine</h3><span class="eyebrow">2 picks</span></div>
+            <div class="pick">
+              <div class="pick-main">
+                <div class="pick-tags"><span class="tag tag-rank">#2 · Q1, Q2, Q3 2026</span><span class="tag">Supplement</span></div>
+                <h4>Magnesium Complex 8-in-1</h4>
+                <span class="pick-brand">Toplux</span>
+                <p>The most consistent seller we track. It held the #2 spot on TikTok Shop for three quarters in a row.</p>
+              </div>
+              <div class="pick-side">
+                <div class="price"><small>TikTok Shop range</small>$16 to $29</div>
+                <a class="btn btn-primary btn-small" data-product="magnesium" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-ghost btn-small" data-tiktok="magnesium" href="#weekly">TikTok Shop</a>
+              </div>
+            </div>
+            <div class="pick">
+              <div class="pick-main">
+                <div class="pick-tags"><span class="tag tag-rank">Top 10 · Q1, Q2 2026</span><span class="tag">Supplement</span></div>
+                <h4>Collagen Peptides Powder</h4>
+                <span class="pick-brand">NeoCell</span>
+                <p>A powder that stirs into coffee or tea, so it fits a routine you already have.</p>
+              </div>
+              <div class="pick-side">
+                <div class="price"><small>TikTok Shop range</small>$30 to $35</div>
+                <a class="btn btn-primary btn-small" data-product="collagen" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-ghost btn-small" data-tiktok="collagen" href="#weekly">TikTok Shop</a>
+              </div>
+            </div>
+            <p class="fine">Supplements aren't for everyone. Check with your doctor before starting one, especially if you're pregnant, nursing or take medication.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section size-section" id="sizes" aria-labelledby="sizes-title">
+    <div class="wrap size-grid">
+      <div class="size-tips">
+        <span class="eyebrow">Before you buy</span>
+        <h2 id="sizes-title">Know your bed size</h2>
+        <ol>
+          <li>Measure the mattress, not the frame. Width first, then length.</li>
+          <li>Check the depth too. Toppers and deep mattresses need sheets with deeper pockets.</li>
+          <li>For a comforter, look for a few extra inches of drape on each side of the width.</li>
+        </ol>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <caption class="eyebrow" style="caption-side: bottom; text-align: left; padding: 12px 18px;">Standard US mattress sizes</caption>
+          <thead><tr><th scope="col">Size</th><th scope="col">Inches (W × L)</th><th scope="col">Centimeters</th></tr></thead>
+          <tbody>
+            <tr><td>Twin</td><td>38 × 75</td><td>97 × 191</td></tr>
+            <tr><td>Twin XL</td><td>38 × 80</td><td>97 × 203</td></tr>
+            <tr><td>Full</td><td>54 × 75</td><td>137 × 191</td></tr>
+            <tr><td>Queen</td><td>60 × 80</td><td>152 × 203</td></tr>
+            <tr><td>King</td><td>76 × 80</td><td>193 × 203</td></tr>
+            <tr><td>California King</td><td>72 × 84</td><td>183 × 213</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="method-title">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How a product gets on this page</span>
+        <h2 id="method-title">Data first, then the fine print</h2>
+      </div>
+      <div class="method">
+        <div class="method-step">
+          <span class="eyebrow">Step 1</span>
+          <h3>It has to be selling</h3>
+          <p>We start from quarterly best-seller reports for US TikTok Shop. A product that only spiked for a week doesn't qualify.</p>
+        </div>
+        <div class="method-step">
+          <span class="eyebrow">Step 2</span>
+          <h3>We read the listing</h3>
+          <p>Sizes, materials, care instructions and the return window. If any of those are vague, it stays off the list.</p>
+        </div>
+        <div class="method-step">
+          <span class="eyebrow">Step 3</span>
+          <h3>We re-check every month</h3>
+          <p>Best-seller lists turn over fast. Only 3 of Q2's top 10 were still there in Q3, so picks that fade get replaced.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="weekly" aria-labelledby="weekly-title">
+    <div class="signup">
+      <div>
+        <span class="eyebrow">The weekly 5</span>
+        <h2 id="weekly-title">Five cozy finds, every Sunday night</h2>
+        <p>One short email with what's selling, what dropped in price and what to skip. Unsubscribe in one click.</p>
+      </div>
+      <form id="signup-form" novalidate>
+        <label class="eyebrow" for="signup-email">Email address</label>
+        <div class="field-row">
+          <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <button class="btn btn-primary" type="submit">Join the list</button>
+        </div>
+        <p class="form-note" id="signup-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a>
+      <div class="footer-links">
+        <a href="#sleep">Sleep</a>
+        <a href="#lounge">Lounge</a>
+        <a href="#routine">Night routine</a>
+        <a href="#sizes">Size guide</a>
+      </div>
+    </div>
+    <div class="legal">
+      <p>Affiliate disclosure: Accessoriex earns commissions from qualifying purchases made through links on this site, including through the TikTok Shop affiliate program. As an Amazon Associate we earn from qualifying purchases.</p>
+      <p>Sales rankings are estimates from FastMoss US TikTok Shop reports for Q1 to Q3 2026. Prices change; the retailer's page is always the final word.</p>
+      <p>Photography on this site is AI-generated styling, not photos of the listed products. Videos on our social channels may feature an AI presenter and are labeled as AI-generated.</p>
+      <p>© 2026 Accessoriex</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== Edit these two settings when the site goes live ===== */
+// 1) Paste each affiliate link (Amazon or TikTok Shop). Empty = button shows "Link coming soon".
+const AFFILIATE_LINKS = {
+  comforter: "https://www.amazon.com/dp/B0GZLRDLW4?tag=zity-20", // Mellow Marshmellow Comforter (Full/Queen)
+  topper: "https://www.amazon.com/dp/B0D3D5LKG9?tag=zity-20",    // BEDLORE Queen Pillow Top Topper, bamboo viscose
+  blanket: "",                                                   // Comfrt isn't sold on Amazon; add TikTok Shop link later
+  magnesium: "https://www.amazon.com/dp/B0CRY2SVPV?tag=zity-20", // Toplux Magnesium Complex 8 Elemental
+  collagen: "https://www.amazon.com/dp/B0F5692W7S?tag=zity-20"   // NeoCell Collagen Peptides Powder 22oz
+};
+// 2) TikTok Shop. Until you have Showcase links, every TikTok button opens your profile (it also grows followers toward the 1,000 gate).
+//    After the gate, paste each product's Showcase / TikTok Shop link to override.
+const TIKTOK_PROFILE = "https://www.tiktok.com/@accessoriex";
+const TIKTOK_LINKS = {
+  comforter: "",
+  topper: "",
+  blanket: "",
+  magnesium: "",
+  collagen: ""
+};
+// 3) Your email service's form endpoint (Beehiiv, Kit/ConvertKit, MailerLite). Empty = preview mode.
+const EMAIL_ENDPOINT = "";
+/* =========================================================== */
+
+document.querySelectorAll("[data-product]").forEach(function (btn) {
+  const url = AFFILIATE_LINKS[btn.dataset.product];
+  if (url) {
+    btn.href = url;
+    btn.target = "_blank";
+    btn.rel = "sponsored noopener";
+  } else {
+    btn.hidden = true;
+  }
+});
+
+document.querySelectorAll("[data-tiktok]").forEach(function (btn) {
+  const own = TIKTOK_LINKS[btn.dataset.tiktok];
+  btn.href = own || TIKTOK_PROFILE;
+  btn.target = "_blank";
+  btn.rel = own ? "sponsored noopener" : "noopener";
+  if (!own) btn.textContent = "See it on TikTok";
+  if (!AFFILIATE_LINKS[btn.dataset.tiktok]) {
+    btn.classList.remove("btn-ghost");
+    btn.classList.add("btn-primary");
+  }
+});
+
+const form = document.getElementById("signup-form");
+const note = document.getElementById("signup-note");
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const email = document.getElementById("signup-email").value.trim();
+  note.className = "form-note";
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    note.textContent = "Enter a full email address, like name@example.com.";
+    note.classList.add("err");
+    return;
+  }
+  if (!EMAIL_ENDPOINT) {
+    note.textContent = "Preview mode: signups go live once the email service is connected.";
+    return;
+  }
+  try {
+    const res = await fetch(EMAIL_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email }) });
+    if (!res.ok) throw new Error(String(res.status));
+    note.textContent = "You're on the list. The next weekly 5 lands Sunday night.";
+    note.classList.add("ok");
+    form.reset();
+  } catch (err) {
+    note.textContent = "That didn't go through. Check your connection and try again.";
+    note.classList.add("err");
+  }
+});
+</script>
