@@ -412,7 +412,9 @@ tr:last-child td { border-bottom: 0; }
         <h2 id="weekly-title">Five cozy finds, every Sunday night</h2>
         <p>One short email with what's selling, what dropped in price and what to skip. Unsubscribe in one click.</p>
       </div>
-      <form id="signup-form" novalidate>
+      <form id="signup-form" name="weekly" method="POST" data-netlify="true" netlify-honeypot="company" novalidate>
+        <input type="hidden" name="form-name" value="weekly">
+        <p hidden><label>Company <input name="company"></label></p>
         <label class="eyebrow" for="signup-email">Email address</label>
         <div class="field-row">
           <input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
@@ -502,12 +504,10 @@ form.addEventListener("submit", async function (e) {
     note.classList.add("err");
     return;
   }
-  if (!EMAIL_ENDPOINT) {
-    note.textContent = "Preview mode: signups go live once the email service is connected.";
-    return;
-  }
   try {
-    const res = await fetch(EMAIL_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email }) });
+    const res = EMAIL_ENDPOINT
+      ? await fetch(EMAIL_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: email }) })
+      : await fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: new URLSearchParams(new FormData(form)).toString() });
     if (!res.ok) throw new Error(String(res.status));
     note.textContent = "You're on the list. The next weekly 5 lands Sunday night.";
     note.classList.add("ok");
