@@ -199,6 +199,14 @@ tr:last-child td { border-bottom: 0; }
   .hero-copy > *:nth-child(4) { animation-delay: .24s; }
   @keyframes rise { from { transform: translateY(10px); } to { transform: none; } }
 }
+
+.shopvid { padding: 28px 0 8px; }
+.shopvid h2 { font-size: var(--step-2); margin-bottom: 6px; }
+.shopvid p.sub { color: var(--muted); margin-bottom: 14px; }
+.shopvid ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.shopvid li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); }
+.shopvid li span { min-width: 0; }
+.shopvid li small { display: block; color: var(--muted); }
 </style>
 
 <header class="site-header">
@@ -236,6 +244,20 @@ tr:last-child td { border-bottom: 0; }
     </div>
   </section>
 
+
+  <section class="wrap shopvid" id="shop" aria-labelledby="shop-title">
+    <h2 id="shop-title">Shop the videos</h2>
+    <p class="sub">Saw it in one of our videos? Here's the link. Prices change, so tap through for today's price.</p>
+    <ol>
+          <li><span><strong>Govee RGBIC Smart Table Lamp 2</strong><small>The “boutique hotel” living room video</small></span><a class="btn btn-primary btn-small" data-product="lamp" data-tiktok-fallback="lamp" href="#picks-title">Shop</a></li>
+          <li><span><strong>Comfrt Dreamer Blanket</strong><small>The “always cold” gift video</small></span><a class="btn btn-primary btn-small" data-product="blanket" data-tiktok-fallback="blanket" href="#picks-title">Shop</a></li>
+          <li><span><strong>Mellow MarshMellow Comforter</strong><small>The “basically a cloud” video</small></span><a class="btn btn-primary btn-small" data-product="comforter" data-tiktok-fallback="comforter" href="#picks-title">Shop</a></li>
+          <li><span><strong>BEDLORE Bamboo Pillow-Top Topper</strong><small>The mattress upgrade video</small></span><a class="btn btn-primary btn-small" data-product="topper" data-tiktok-fallback="topper" href="#picks-title">Shop</a></li>
+          <li><span><strong>Kitsch Self-Draining Shower Caddy</strong><small>Bathroom upgrade</small></span><a class="btn btn-primary btn-small" data-product="caddy" data-tiktok-fallback="caddy" href="#picks-title">Shop</a></li>
+          <li><span><strong>NeoCell Grassfed Collagen Bio-Peptides</strong><small>The coffee collagen video</small></span><a class="btn btn-primary btn-small" data-product="collagen" data-tiktok-fallback="collagen" href="#picks-title">Shop</a></li>
+          <li><span><strong>Toplux Magnesium Complex</strong><small>The 8-forms magnesium video</small></span><a class="btn btn-primary btn-small" data-product="magnesium" data-tiktok-fallback="magnesium" href="#picks-title">Shop</a></li>
+    </ol>
+  </section>
   <div class="disclosure-bar">
     <div class="wrap">We may earn a commission when you buy through links on this page, at no extra cost to you. It never changes which products make the list.</div>
   </div>
@@ -514,6 +536,11 @@ document.querySelectorAll("[data-product]").forEach(function (btn) {
     btn.href = url;
     btn.target = "_blank";
     btn.rel = "sponsored noopener";
+  } else if (btn.dataset.tiktokFallback) {
+    btn.href = "https://comfrt.com/products/the-dreamer-blanket";
+    btn.target = "_blank";
+    btn.rel = "noopener";
+    btn.textContent = "Shop at Comfrt";
   } else {
     btn.hidden = true;
   }
