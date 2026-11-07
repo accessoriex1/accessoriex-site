@@ -207,6 +207,15 @@ tr:last-child td { border-bottom: 0; }
 .shopvid li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); }
 .shopvid li span { min-width: 0; }
 .shopvid li small { display: block; color: var(--muted); }
+
+.gifts { padding: 28px 0 8px; }
+.gifts h2 { font-size: var(--step-2); margin-bottom: 6px; }
+.gifts p.sub { color: var(--muted); margin-bottom: 14px; }
+.gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.gift { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface-2); display: flex; flex-direction: column; gap: 8px; }
+.gift .for { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.gift h3 { font-size: 1.05rem; }
+.gift p { color: var(--muted); font-size: .95rem; flex: 1; }
 </style>
 
 <header class="site-header">
@@ -257,6 +266,19 @@ tr:last-child td { border-bottom: 0; }
           <li><span><strong>NeoCell Grassfed Collagen Bio-Peptides</strong><small>The coffee collagen video</small></span><a class="btn btn-primary btn-small" data-product="collagen" data-tiktok-fallback="collagen" href="#picks-title">Shop</a></li>
           <li><span><strong>Toplux Magnesium Complex</strong><small>The 8-forms magnesium video</small></span><a class="btn btn-primary btn-small" data-product="magnesium" data-tiktok-fallback="magnesium" href="#picks-title">Shop</a></li>
     </ol>
+  </section>
+
+  <section class="wrap gifts" id="gifts" aria-labelledby="gifts-title">
+    <span class="eyebrow">Black Friday &amp; holiday gift guide</span>
+    <h2 id="gifts-title">Cozy gifts they'll actually use</h2>
+    <p class="sub">Five picks from our videos, sorted by who they're for. Black Friday deals change daily, so tap through for today's price.</p>
+    <div class="gift-grid">
+      <div class="gift"><span class="for">For the one who's always cold</span><h3>Comfrt Dreamer Blanket</h3><p>Velvety plush on both sides with four-way stretch, from a 50x60 throw up to king-bed size.</p><a class="btn btn-primary btn-small" data-product="blanket" data-tiktok-fallback="blanket" href="#picks-title">See today's price</a></div>
+      <div class="gift"><span class="for">For the homebody</span><h3>Govee Table Lamp 2</h3><p>Warm golden glow or 16 million colors, 60+ scenes, works with Alexa, Google and Matter.</p><a class="btn btn-primary btn-small" data-product="lamp" data-tiktok-fallback="lamp" href="#picks-title">See today's price</a></div>
+      <div class="gift"><span class="for">For the hard-to-shop-for</span><h3>Mellow MarshMellow Comforter</h3><p>Double-stuffed, fully machine washable, 10 colors, twin to Cal King.</p><a class="btn btn-primary btn-small" data-product="comforter" data-tiktok-fallback="comforter" href="#picks-title">See today's price</a></div>
+      <div class="gift"><span class="for">For the new apartment</span><h3>Kitsch Self-Draining Shower Caddy</h3><p>Keeps shampoo and soap bars out of the puddle. Suction-mounts or stands on its own.</p><a class="btn btn-primary btn-small" data-product="caddy" data-tiktok-fallback="caddy" href="#picks-title">See today's price</a></div>
+      <div class="gift"><span class="for">For the guest room</span><h3>BEDLORE Bamboo Pillow-Top Topper</h3><p>Bamboo viscose cover, thick pillow top, deep pockets fit 6–18 inch mattresses.</p><a class="btn btn-primary btn-small" data-product="topper" data-tiktok-fallback="topper" href="#picks-title">See today's price</a></div>
+    </div>
   </section>
   <div class="disclosure-bar">
     <div class="wrap">We may earn a commission when you buy through links on this page, at no extra cost to you. It never changes which products make the list.</div>
