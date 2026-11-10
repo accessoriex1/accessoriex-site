@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
 <title>Accessoriex</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Accessoriex: beautiful home accessories and everyday upgrades, chosen from 2026 best-seller data. Make every space feel like home.">
@@ -227,12 +229,24 @@ tr:last-child td { border-bottom: 0; }
 .pgift h3 { font-size: 1.1rem; line-height: 1.2; }
 .pgift p { color: var(--muted); font-size: .92rem; flex: 1; }
 .pgift-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.vid-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.vid { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.vid-thumb { position: relative; display: block; border-radius: 12px; overflow: hidden; aspect-ratio: 9/14; background: #000; }
+.vid-thumb img { width: 100%; height: 100%; object-fit: cover; }
+.vid-play { position: absolute; inset: 0; margin: auto; width: 54px; height: 54px; border-radius: 50%; background: rgba(0,0,0,.55); }
+.vid-play::after { content: ""; position: absolute; left: 21px; top: 16px; border-left: 16px solid #fff; border-top: 11px solid transparent; border-bottom: 11px solid transparent; }
+.vid h3 { font-size: 1rem; line-height: 1.25; flex: 1; }
+.vid-links { font-size: .85rem; color: var(--muted); }
+.vid-links a { color: var(--muted); }
+.vid .btn { align-self: flex-start; }
 </style>
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Accessoriex, home"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a>
     <nav class="nav" aria-label="Main">
+      <a class="nav-link" href="/shop.html">Shop all</a>
+      <a class="nav-link" href="#videos">Videos</a>
       <a class="nav-link" href="#personalized">Personalized gifts</a>
       <a class="nav-link" href="#sleep">Sleep</a>
       <a class="nav-link" href="#lounge">Lounge</a>
@@ -265,6 +279,75 @@ tr:last-child td { border-bottom: 0; }
     </div>
   </section>
 
+
+  <section class="wrap videos" id="videos" aria-labelledby="videos-title">
+    <span class="eyebrow">Watch, then shop</span>
+    <h2 id="videos-title">Our latest videos</h2>
+    <p class="sub">Every video we post on TikTok, Instagram and YouTube, with the product link right under it.</p>
+    <div class="vid-grid">
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/vF-6XS3hALU" target="_blank" rel="noopener" aria-label="Watch: Grandma sweatshirt with every grandkid&#x27;s name"><img src="https://i.ytimg.com/vi/vF-6XS3hALU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Grandma sweatshirt with every grandkid&#x27;s name</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/vF-6XS3hALU" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7706600744966688014" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dfkef7biWr3/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids" target="_blank" rel="noopener">Shop on Etsy</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/xJbXpI1MD7w" target="_blank" rel="noopener" aria-label="Watch: Make a rental look finished in 3 easy moves"><img src="https://i.ytimg.com/vi/xJbXpI1MD7w/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Make a rental look finished in 3 easy moves</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/xJbXpI1MD7w" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7706639539091082510" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dfkvb5dEbEH/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" href="#picks-title">See the picks</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/gohZ86YhvnU" target="_blank" rel="noopener" aria-label="Watch: Make a guest bed feel like a hotel bed"><img src="https://i.ytimg.com/vi/gohZ86YhvnU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Make a guest bed feel like a hotel bed</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/gohZ86YhvnU" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7706376172585635086" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dfi6tgLigM0/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="topper" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/DV0NM4JGFqI" target="_blank" rel="noopener" aria-label="Watch: 3 hotel details for a tidy bathroom counter"><img src="https://i.ytimg.com/vi/DV0NM4JGFqI/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>3 hotel details for a tidy bathroom counter</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/DV0NM4JGFqI" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7706267867737623822" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfiKpD7Gezi/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="caddy" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/G_pyjT_Jgd0" target="_blank" rel="noopener" aria-label="Watch: The gift for someone&#x27;s first apartment"><img src="https://i.ytimg.com/vi/G_pyjT_Jgd0/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>The gift for someone&#x27;s first apartment</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/G_pyjT_Jgd0" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7706005076460064013" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfgV6ZwFX8c/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="caddy" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/4HIGiUCtH9A" target="_blank" rel="noopener" aria-label="Watch: Light your living room like a designer"><img src="https://i.ytimg.com/vi/4HIGiUCtH9A/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Light your living room like a designer</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/4HIGiUCtH9A" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7705896833448496397" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dffl2MKFRBj/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="lamp" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/knm1YWKMIL0" target="_blank" rel="noopener" aria-label="Watch: Make your living room feel like a boutique hotel"><img src="https://i.ytimg.com/vi/knm1YWKMIL0/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Make your living room feel like a boutique hotel</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/knm1YWKMIL0" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7705633978237127949" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfdxHcHjZxn/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="lamp" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/EYbhKDIFlko" target="_blank" rel="noopener" aria-label="Watch: What 10 minutes does to a messy pantry"><img src="https://i.ytimg.com/vi/EYbhKDIFlko/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>What 10 minutes does to a messy pantry</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/EYbhKDIFlko" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.tiktok.com/@accessoriex1/video/7705525740938235150" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfdBDPEkWgp/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" href="#picks-title">See the picks</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/bHrZiDwljQg" target="_blank" rel="noopener" aria-label="Watch: The blanket for the person who&#x27;s always cold"><img src="https://i.ytimg.com/vi/bHrZiDwljQg/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>The blanket for the person who&#x27;s always cold</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/bHrZiDwljQg" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.instagram.com/reel/DfTV3LCDXgh/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="blanket" data-tiktok-fallback="blanket" href="#picks-title">Shop this</a>
+      </article>
+      <article class="vid">
+        <a class="vid-thumb" href="https://www.youtube.com/shorts/8zqDo252ckU" target="_blank" rel="noopener" aria-label="Watch: Stop making your bed flat: the hotel trick"><img src="https://i.ytimg.com/vi/8zqDo252ckU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+        <h3>Stop making your bed flat: the hotel trick</h3>
+        <div class="vid-links"><a href="https://www.youtube.com/shorts/8zqDo252ckU" target="_blank" rel="noopener">YouTube</a> &middot; <a href="https://www.instagram.com/reel/DfTs_X6joeq/" target="_blank" rel="noopener">Instagram</a></div>
+        <a class="btn btn-primary btn-small" data-product="comforter" href="#picks-title">Shop this</a>
+      </article>
+    </div>
+    <p class="sub"><a href="https://www.tiktok.com/@accessoriex1" target="_blank" rel="noopener">Follow @accessoriex1 on TikTok</a> for new videos every day.</p>
+  </section>
 
   <section class="wrap shopvid" id="shop" aria-labelledby="shop-title">
     <h2 id="shop-title">Shop the videos</h2>
@@ -481,7 +564,8 @@ tr:last-child td { border-bottom: 0; }
         <div class="pgift-foot"><span class="price"><small>From</small>$19.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4614153388/promoted-to-grandma-mug-est-2027" target="_blank" rel="noopener">Personalize on Etsy</a></div>
       </article>
     </div>
-    <p class="sub">Gift guides: <a href="/gifts-for-grandma.html">Gifts for Grandma</a> · <a href="/custom-pet-gifts.html">Custom pet gifts</a> · <a href="/regalos-para-abuela.html">Regalos para Abuela</a></p>
+    <p><a class="btn btn-primary" href="/shop.html">Shop all 54 personalized gifts</a></p>
+    <p class="sub">Gift guides: <a href="/shop.html">Shop all</a> · <a href="/gifts-for-grandma.html">Gifts for Grandma</a> · <a href="/custom-pet-gifts.html">Custom pet gifts</a> · <a href="/regalos-para-abuela.html">Regalos para Abuela</a></p>
     <p class="fine">These are our own products, sold through our Etsy shop, so we earn from the sale rather than a commission. Photos are product mockups; names shown are examples.</p>
   </section>
   <div class="disclosure-bar">
