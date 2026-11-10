@@ -216,12 +216,24 @@ tr:last-child td { border-bottom: 0; }
 .gift .for { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .gift h3 { font-size: 1.05rem; }
 .gift p { color: var(--muted); font-size: .95rem; flex: 1; }
+
+.personalized { padding: 40px 0 8px; }
+.personalized h2 { font-size: var(--step-3); margin: 6px 0; }
+.personalized p.sub { color: var(--muted); margin-bottom: 18px; max-width: 62ch; }
+.pgift-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.pgift { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); min-width: 0; }
+.pgift-img img { border-radius: 12px; aspect-ratio: 1; object-fit: cover; width: 100%; background: #fff; }
+.pgift .for { font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-family: var(--font-mono); }
+.pgift h3 { font-size: 1.1rem; line-height: 1.2; }
+.pgift p { color: var(--muted); font-size: .92rem; flex: 1; }
+.pgift-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 </style>
 
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="#top" aria-label="Accessoriex, home"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a>
     <nav class="nav" aria-label="Main">
+      <a class="nav-link" href="#personalized">Personalized gifts</a>
       <a class="nav-link" href="#sleep">Sleep</a>
       <a class="nav-link" href="#lounge">Lounge</a>
       <a class="nav-link" href="#routine">Night routine</a>
@@ -279,6 +291,99 @@ tr:last-child td { border-bottom: 0; }
       <div class="gift"><span class="for">For the new apartment</span><h3>Kitsch Self-Draining Shower Caddy</h3><p>Keeps shampoo and soap bars out of the puddle. Suction-mounts or stands on its own.</p><a class="btn btn-primary btn-small" data-product="caddy" data-tiktok-fallback="caddy" href="#picks-title">See today's price</a></div>
       <div class="gift"><span class="for">For the guest room</span><h3>BEDLORE Bamboo Pillow-Top Topper</h3><p>Bamboo viscose cover, thick pillow top, deep pockets fit 6–18 inch mattresses.</p><a class="btn btn-primary btn-small" data-product="topper" data-tiktok-fallback="topper" href="#picks-title">See today's price</a></div>
     </div>
+  </section>
+
+  <section class="wrap personalized" id="personalized" aria-labelledby="personalized-title">
+    <span class="eyebrow">Made by us · Personalized</span>
+    <h2 id="personalized-title">Personalized gifts with their names on it</h2>
+    <p class="sub">Designed by Accessoriex and made to order by our US print partner. Add the names at checkout on Etsy. For Christmas delivery in the US, order by December 10.</p>
+    <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af25510d54c0aed2a07e85b/25458/98502/grandma-sweatshirt-with-grandkids-names-on-sleeve-personalized-crewneck.jpg?camera_label=front" alt="Grandma sweatshirt, names on the sleeve, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For Grandma</span>
+        <h3>Grandma sweatshirt, names on the sleeve</h3>
+        <p>Every grandkid&#x27;s name runs down the sleeve. Gildan crewneck, S to 3XL.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$49.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613644573/personalized-grandma-sweatshirt-with" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af255136060004898045f96/25458/98502/personalized-grandma-sweatshirt-with-grandkids-names-custom-nana-crewneck.jpg?camera_label=front" alt="Grandma sweatshirt with grandkids&#x27; names, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For Grandma</span>
+        <h3>Grandma sweatshirt with grandkids&#x27; names</h3>
+        <p>Grandma, Nana, Mimi, Gigi or any nickname, with every grandkid&#x27;s name underneath.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613644573/personalized-grandma-sweatshirt-with" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613676372/personalized-abuela-sweatshirt-with" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af2661f8fcf10786f065650/25458/98502/personalized-abuela-sweatshirt-with-grandkids-names-custom-abuela-crewneck.jpg?camera_label=front" alt="Abuela sweatshirt con los nombres de sus nietos, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">Para Abuela</span>
+        <h3>Abuela sweatshirt con los nombres de sus nietos</h3>
+        <p>Abuela, Abuelita or Lita, with each grandchild&#x27;s name.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613676372/personalized-abuela-sweatshirt-with" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613687348/personalized-grandma-christmas-ornament" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af26b16566e1161c90445d6/111948/111822/personalized-grandma-ornament-with-grandkids-names-ceramic-christmas-keepsake-2026.jpg?camera_label=front" alt="Grandma ornament 2026 with grandkids&#x27; names, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For the tree</span>
+        <h3>Grandma ornament 2026 with grandkids&#x27; names</h3>
+        <p>Ceramic keepsake, circle or heart, gold cord included.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613687348/personalized-grandma-christmas-ornament" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613718914/babys-first-christmas-ornament-2026" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af27a4a0b26b9524e0cbdeb/111948/111822/babys-first-christmas-ornament-2026-personalized-baby-name-ceramic-keepsake.jpg?camera_label=front" alt="Baby&#x27;s First Christmas ornament 2026, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For new parents</span>
+        <h3>Baby&#x27;s First Christmas ornament 2026</h3>
+        <p>Baby&#x27;s name and the year, on a ceramic keepsake they&#x27;ll hang every year.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613718914/babys-first-christmas-ornament-2026" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613719124/mi-primera-navidad-ornament-2026-spanish" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af27a64e0bb466c1b00a3c8/111948/111822/mi-primera-navidad-ornament-2026-spanish-baby-name-ornament-ceramic-keepsake.jpg?camera_label=front" alt="Mi Primera Navidad ornament 2026, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">En español</span>
+        <h3>Mi Primera Navidad ornament 2026</h3>
+        <p>Baby&#x27;s first Christmas, in Spanish, with the baby&#x27;s name.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613719124/mi-primera-navidad-ornament-2026-spanish" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777644/custom-pet-photo-ornament-2026" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af296f53cb8f0f1c803df66/111948/111822/custom-pet-photo-ornament-2026-personalized-dog-or-cat-name-ceramic-keepsake.jpg?camera_label=front" alt="Pet photo ornament 2026, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For pet parents</span>
+        <h3>Pet photo ornament 2026</h3>
+        <p>Your dog or cat&#x27;s real photo and name. Send the photo after checkout; you approve a proof first.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777644/custom-pet-photo-ornament-2026" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777804/custom-pet-photo-blanket-with-name" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af297115a350ce2a10252a7/68324/9077/custom-pet-photo-blanket-with-name-personalized-dog-or-cat-plush-throw.jpg?camera_label=front" alt="Pet photo blanket with name, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For pet parents</span>
+        <h3>Pet photo blanket with name</h3>
+        <p>Their photo and name on a plush velveteen throw, 50x60 or 60x80.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$49.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777804/custom-pet-photo-blanket-with-name" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777740/custom-pet-photo-shirt-comfort-colors" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af2970d0e1ec3019d096e84/73207/98445/custom-pet-photo-shirt-comfort-colors-dog-portrait-tee-with-name.jpg?camera_label=front" alt="Pet photo Comfort Colors tee, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For pet parents</span>
+        <h3>Pet photo Comfort Colors tee</h3>
+        <p>A 90s-style tee with your pet&#x27;s face and name, on garment-dyed cotton.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$29.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777740/custom-pet-photo-shirt-comfort-colors" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777686/pet-memorial-ornament-with-photo" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af296f8e0bb466c1b00b8f5/111948/111822/pet-memorial-ornament-with-photo-personalized-dog-or-cat-name-and-years-ceramic.jpg?camera_label=front" alt="Pet memorial ornament, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">In loving memory</span>
+        <h3>Pet memorial ornament</h3>
+        <p>Their photo, name and years, so they stay on the tree every Christmas.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777686/pet-memorial-ornament-with-photo" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613695386/most-likely-to-christmas-shirts-matching" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af26ef0963ef19c0a0c4f5d/18102/102044/most-likely-to-christmas-shirts-matching-family-shirts-2026-personalized-name-tee.jpg?camera_label=front-2" alt="Most Likely To Christmas shirts, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For the whole family</span>
+        <h3>Most Likely To Christmas shirts</h3>
+        <p>Matching family tees, each with a name and a funny line. Adult and youth sizes.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$24.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613695386/most-likely-to-christmas-shirts-matching" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613778044/personalized-grandma-mug-with-grandkids" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af297568cc7a44fc40026da/65216/6310/personalized-grandma-mug-with-grandkids-names-custom-nana-coffee-mug.jpg?camera_label=front" alt="Grandma mug with grandkids&#x27; names, product mockup" width="600" height="600" loading="lazy"></a>
+        <span class="for">For Grandma</span>
+        <h3>Grandma mug with grandkids&#x27; names</h3>
+        <p>Both sides printed, 11 oz or 15 oz, dishwasher safe.</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$19.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613778044/personalized-grandma-mug-with-grandkids" target="_blank" rel="noopener">Personalize on Etsy</a></div>
+      </article>
+    </div>
+    <p class="fine">These are our own products, sold through our Etsy shop, so we earn from the sale rather than a commission. Photos are product mockups; names shown are examples.</p>
   </section>
   <div class="disclosure-bar">
     <div class="wrap">We may earn a commission when you buy through links on this page, at no extra cost to you. It never changes which products make the list.</div>
@@ -520,6 +625,7 @@ tr:last-child td { border-bottom: 0; }
     <div class="legal">
       <p>Affiliate disclosure: Accessoriex earns commissions from qualifying purchases made through links on this site, including through the TikTok Shop affiliate program. As an Amazon Associate we earn from qualifying purchases.</p>
       <p>Sales rankings are estimates from FastMoss US TikTok Shop reports for Q1 to Q3 2026. Prices change; the retailer's page is always the final word.</p>
+      <p>Personalized gifts are designed by Accessoriex and sold through our Etsy shop; they are not affiliate products. Their photos are product mockups.</p>
       <p>Photography on this site is AI-generated styling, not photos of the listed products. Videos on our social channels may feature an AI presenter and are labeled as AI-generated.</p>
       <p>© 2026 Accessoriex</p>
     </div>
