@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Etsy Finds From Our Videos: Matching Family Christmas Shirts and Personalized Gifts | Accessoriex</title>
+<meta name="description" content="Saw it in an Accessoriex video? Every Etsy design from our TikTok, Instagram and YouTube videos in one place, with direct Etsy links: matching family Christmas shirts, pink Santa sweatshirts, name shirts and personalized gifts.">
+<link rel="canonical" href="https://accessoriex.com/etsy/">
+<meta property="og:title" content="Etsy Finds From Our Videos: Matching Family Christmas Shirts and Personalized Gifts | Accessoriex">
+<meta property="og:description" content="Saw it in an Accessoriex video? Every Etsy design from our TikTok, Instagram and YouTube videos in one place, with direct Etsy links: matching family Christmas shirts, pink Santa sweatshirts, name shirts and personalized gifts.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accessoriex.com/etsy/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a lamp-lit night page. Split hero, then category "rooms" that alternate photo and list, a size-guide table, signup, disclosures. */
+:root {
+  --bg: #13151d;          /* blue-black, the room after lights out */
+  --surface: #1b1e29;
+  --surface-2: #232736;
+  --fg: #ede6da;          /* warm linen */
+  --muted: #a39b8e;
+  --line: rgba(237, 230, 218, 0.12);
+  --accent: #e8b56c;      /* bedside-lamp amber */
+  --accent-ink: #1a1408;
+  --glow: rgba(232, 181, 108, 0.18);
+  --sage: #9db3a1;
+  --font-display: "Gloock", "Georgia", "Times New Roman", serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
+  --step--1: 0.8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.1rem, 4vw, 3rem);
+  --step-4: clamp(2.8rem, 7vw, 5.6rem);
+  --radius: 14px;
+  --max: 1180px;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f1eee8; --surface: #ffffff; --surface-2: #e9e5dc; --fg: #1b1d27; --muted: #5f5a52;
+    --line: rgba(27, 29, 39, 0.12); --accent: #9a5b12; --accent-ink: #fff8ee; --glow: rgba(154, 91, 18, 0.12); --sage: #4f6b57;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f1eee8; --surface: #ffffff; --surface-2: #e9e5dc; --fg: #1b1d27; --muted: #5f5a52;
+  --line: rgba(27, 29, 39, 0.12); --accent: #9a5b12; --accent-ink: #fff8ee; --glow: rgba(154, 91, 18, 0.12); --sage: #4f6b57;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: var(--step-0); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+img { display: block; max-width: 100%; height: auto; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: -0.01em; }
+p { margin: 0; }
+
+.wrap {
+  max-width: var(--max); margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.eyebrow { font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+/* Header */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 86%, transparent); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 14px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: var(--font-display); font-size: 1.35rem; }
+.brand-mark { width: 26px; height: 26px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, var(--accent), transparent 70%), var(--surface-2); box-shadow: 0 0 22px var(--glow); }
+.nav { display: flex; gap: 24px; align-items: center; }
+.nav a { text-decoration: none; font-size: 0.95rem; color: var(--muted); }
+.nav a:hover { color: var(--fg); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 20px; border-radius: 999px; font: 600 0.95rem/1 var(--font-body); text-decoration: none; border: 1px solid transparent; cursor: pointer; transition: transform .15s ease, background .15s ease; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-ghost { border-color: var(--line); color: var(--fg); background: transparent; }
+.btn-ghost:hover { border-color: var(--accent); }
+.btn-small { padding: 9px 16px; font-size: 0.875rem; }
+@media (max-width: 760px) { .nav .nav-link { display: none; } }
+
+/* Hero */
+.hero { padding-block: clamp(40px, 7vw, 88px); overflow-x: clip; }
+.hero .wrap { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+.hero-copy { display: grid; gap: 24px; min-width: 0; }
+.hero h1 { font-size: var(--step-4); }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero-lede { font-size: var(--step-1); color: var(--muted); max-width: 34ch; line-height: 1.5; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-figure { position: relative; margin: 0; }
+.hero-figure::before { content: ""; position: absolute; inset: -12% -8% auto auto; width: 70%; aspect-ratio: 1; background: radial-gradient(circle, var(--glow), transparent 65%); pointer-events: none; }
+.hero-figure img { position: relative; border-radius: 22px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; max-width: 100%; }
+.hero-stamp { position: absolute; left: -18px; bottom: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; display: grid; gap: 2px; box-shadow: 0 18px 40px rgba(0,0,0,.28); }
+.hero-stamp strong { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; }
+.hero-stamp span { font-size: var(--step--1); color: var(--muted); }
+@media (max-width: 860px) {
+  .hero .wrap { grid-template-columns: 1fr; }
+  .hero-figure img { aspect-ratio: 16 / 10; }
+  .hero-stamp { left: 12px; bottom: 12px; }
+}
+
+.disclosure-bar { border-block: 1px solid var(--line); background: var(--surface); }
+.disclosure-bar .wrap { padding-block: 12px; font-size: var(--step--1); color: var(--muted); }
+
+/* Rooms */
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.section-head { display: grid; gap: 12px; margin-bottom: 40px; max-width: 46rem; }
+.section-head h2 { font-size: var(--step-3); }
+.section-head p { color: var(--muted); max-width: 60ch; }
+
+.rooms { display: grid; gap: clamp(48px, 7vw, 96px); }
+.room { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.room.flip { grid-template-columns: 1.1fr 0.9fr; }
+.room.flip .room-photo { order: 2; }
+.room-photo { margin: 0; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 84px); }
+.room-photo img { border-radius: 18px; aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.room-photo figcaption { margin-top: 10px; font-size: var(--step--1); color: var(--muted); }
+.room-body { display: grid; gap: 20px; min-width: 0; }
+.room-title { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: 14px; }
+.room-title h3 { font-size: var(--step-2); }
+@media (max-width: 860px) {
+  .room, .room.flip { grid-template-columns: 1fr; }
+  .room.flip .room-photo { order: 0; }
+  .room-photo { position: static; }
+  .room-photo img { aspect-ratio: 16 / 10; }
+}
+
+.pick { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; padding: 22px 24px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.pick-main { display: grid; gap: 8px; min-width: 0; }
+.pick-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.tag-rank { color: var(--accent); border-color: color-mix(in srgb, var(--accent) 45%, transparent); }
+.pick h4 { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: 1.45rem; line-height: 1.15; }
+.pick-brand { font-size: var(--step--1); color: var(--muted); font-family: var(--font-mono); letter-spacing: .04em; }
+.pick p { color: var(--muted); max-width: 52ch; }
+.pick-side { display: grid; gap: 10px; justify-items: end; align-content: start; text-align: right; }
+.price { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 0.95rem; }
+.price small { display: block; color: var(--muted); font-size: 0.72rem; letter-spacing: .06em; text-transform: uppercase; }
+.btn-soon { border-color: var(--line); color: var(--muted); background: transparent; cursor: default; }
+@media (max-width: 560px) {
+  .pick { grid-template-columns: 1fr; }
+  .pick-side { justify-items: start; text-align: left; grid-auto-flow: column; align-items: center; justify-content: space-between; }
+}
+.fine { font-size: var(--step--1); color: var(--muted); }
+
+/* Size guide */
+.size-section { background: var(--surface); border-block: 1px solid var(--line); }
+.size-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.size-grid > * { min-width: 0; }
+.table-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
+table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th { font-family: var(--font-mono); font-weight: 500; font-size: 0.75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+td { font-family: var(--font-mono); font-size: 0.95rem; }
+td:first-child { font-family: var(--font-body); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+.size-tips { display: grid; gap: 16px; }
+.size-tips h2 { font-size: var(--step-3); }
+.size-tips ol { margin: 0; padding-left: 1.2em; display: grid; gap: 10px; color: var(--muted); }
+.size-tips li::marker { color: var(--accent); font-family: var(--font-mono); }
+@media (max-width: 860px) { .size-grid { grid-template-columns: 1fr; } }
+
+/* Method */
+.method { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.method-step { display: grid; gap: 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+.method-step .eyebrow { color: var(--accent); }
+.method-step h3 { font-size: 1.5rem; }
+.method-step p { color: var(--muted); }
+@media (max-width: 760px) { .method { grid-template-columns: 1fr; } }
+
+/* Signup */
+.signup { position: relative; overflow: hidden; border-radius: 24px; background: var(--surface-2); border: 1px solid var(--line); padding: clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center; }
+.signup::before { content: ""; position: absolute; right: -10%; top: -40%; width: 60%; aspect-ratio: 1; background: radial-gradient(circle, var(--glow), transparent 65%); pointer-events: none; }
+.signup > * { position: relative; min-width: 0; }
+.signup h2 { font-size: var(--step-3); }
+.signup p { color: var(--muted); margin-top: 12px; }
+.signup form { display: grid; gap: 10px; }
+.field-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.field-row input { flex: 1 1 220px; min-width: 0; padding: 13px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); font: 400 1rem var(--font-body); }
+.field-row input::placeholder { color: var(--muted); }
+.form-note { font-size: var(--step--1); color: var(--muted); min-height: 1.4em; }
+.form-note.ok { color: var(--sage); }
+.form-note.err { color: var(--accent); }
+@media (max-width: 760px) { .signup { grid-template-columns: 1fr; } }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--line); margin-top: clamp(56px, 8vw, 104px); }
+.site-footer .wrap { padding-block: 40px 48px; display: grid; gap: 20px; }
+.footer-top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a { color: var(--muted); text-decoration: none; font-size: .95rem; }
+.footer-links a:hover { color: var(--fg); }
+.legal { display: grid; gap: 8px; font-size: var(--step--1); color: var(--muted); max-width: 80ch; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * { animation: rise .7s ease both; }
+  .hero-copy > *:nth-child(2) { animation-delay: .08s; }
+  .hero-copy > *:nth-child(3) { animation-delay: .16s; }
+  .hero-copy > *:nth-child(4) { animation-delay: .24s; }
+  @keyframes rise { from { transform: translateY(10px); } to { transform: none; } }
+}
+
+.shopvid { padding: 28px 0 8px; }
+.shopvid h2 { font-size: var(--step-2); margin-bottom: 6px; }
+.shopvid p.sub { color: var(--muted); margin-bottom: 14px; }
+.shopvid ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.shopvid li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface-2); }
+.shopvid li span { min-width: 0; }
+.shopvid li small { display: block; color: var(--muted); }
+
+.gifts { padding: 28px 0 8px; }
+.gifts h2 { font-size: var(--step-2); margin-bottom: 6px; }
+.gifts p.sub { color: var(--muted); margin-bottom: 14px; }
+.gift-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.gift { padding: 16px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface-2); display: flex; flex-direction: column; gap: 8px; }
+.gift .for { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.gift h3 { font-size: 1.05rem; }
+.gift p { color: var(--muted); font-size: .95rem; flex: 1; }
+
+.personalized { padding: 40px 0 8px; }
+.personalized h2 { font-size: var(--step-3); margin: 6px 0; }
+.personalized p.sub { color: var(--muted); margin-bottom: 18px; max-width: 62ch; }
+.pgift-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin-bottom: 14px; }
+.pgift { display: flex; flex-direction: column; gap: 8px; padding: 12px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); min-width: 0; }
+.pgift-img img { border-radius: 12px; aspect-ratio: 1; object-fit: cover; width: 100%; background: #fff; }
+.pgift .for { font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-family: var(--font-mono); }
+.pgift h3 { font-size: 1.1rem; line-height: 1.2; }
+.pgift p { color: var(--muted); font-size: .92rem; flex: 1; }
+.pgift-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+</style>
+<style>.faq{border-top:1px solid var(--line);padding:14px 0}.faq summary{cursor:pointer;font-weight:600}.faq p{color:var(--muted);margin-top:8px}.lede p{color:var(--muted);max-width:68ch;margin-bottom:12px}</style>
+<style>
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 10px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:999px;padding:7px 14px;font:inherit;font-size:.9rem;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.shop-search{width:100%;max-width:420px;padding:10px 14px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);font:inherit;margin:6px 0 8px}
+.shop-group h2{font-family:var(--font-display);font-size:var(--step-2);margin:34px 0 12px}
+.shop-empty{color:var(--muted)}
+</style>
+
+<style>
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.jump .chip{text-decoration:none}
+.etsy-set{padding:34px 0 8px;border-top:1px solid var(--line);margin-top:26px;scroll-margin-top:80px}
+.etsy-set h2{font-family:var(--font-display);font-size:var(--step-2);margin:0 0 6px}
+.set-head{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;margin-bottom:16px}
+.set-vid{position:relative;display:block;border-radius:14px;overflow:hidden;aspect-ratio:9/16;background:#000}
+.set-vid img{width:100%;height:100%;object-fit:cover}
+.vid-play{position:absolute;inset:auto auto 10px 10px;width:34px;height:34px;border-radius:50%;background:var(--accent)}
+.vid-play::after{content:"";position:absolute;left:13px;top:10px;border-left:11px solid var(--accent-ink);border-top:7px solid transparent;border-bottom:7px solid transparent}
+.set-watch,.set-link{color:var(--muted);font-size:.92rem;margin-top:6px}
+.set-watch a,.set-link a{color:var(--accent)}
+.etsy-cta{margin:34px 0 10px;display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:560px){.set-head{grid-template-columns:96px 1fr;gap:12px}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "name": "Accessoriex Etsy finds from our videos", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://www.etsy.com/listing/4616633289/holiday-chaos-crew-shirt-funny-family", "name": "Holiday Chaos Crew Shirt"}, {"@type": "ListItem", "position": 2, "url": "https://www.etsy.com/listing/4616633387/holiday-chaos-crew-sweatshirt-funny", "name": "Holiday Chaos Crew Sweatshirt"}, {"@type": "ListItem", "position": 3, "url": "https://www.etsy.com/listing/4616535890/pink-coquette-santa-sweatshirt-with-hot", "name": "Pink Coquette Santa Sweatshirt with Hot Cocoa"}, {"@type": "ListItem", "position": 4, "url": "https://www.etsy.com/listing/4616526597/pink-coquette-santa-shirt-with-hot-cocoa", "name": "Pink Coquette Santa Shirt with Hot Cocoa"}, {"@type": "ListItem", "position": 5, "url": "https://www.etsy.com/listing/4616527167/mrs-claus-sweatshirt-pink-pin-up", "name": "Mrs Claus Sweatshirt"}, {"@type": "ListItem", "position": 6, "url": "https://www.etsy.com/listing/4616536412/mrs-claus-shirt-pink-pin-up-christmas", "name": "Mrs Claus Shirt"}, {"@type": "ListItem", "position": 7, "url": "https://www.etsy.com/listing/4616599327/custom-name-christmas-shirt-with-santa", "name": "Custom Name Christmas Shirt with Santa Hat"}, {"@type": "ListItem", "position": 8, "url": "https://www.etsy.com/listing/4616607932/kids-custom-name-christmas-shirt-with", "name": "Kids Custom Name Christmas Shirt with Santa Hat"}, {"@type": "ListItem", "position": 9, "url": "https://www.etsy.com/listing/4616608044/baby-name-christmas-bodysuit-with-santa", "name": "Baby Name Christmas Bodysuit with Santa Hat"}, {"@type": "ListItem", "position": 10, "url": "https://www.etsy.com/listing/4616598715/mom-reindeer-shirt-with-bow-matching", "name": "Mom Reindeer Shirt with Bow"}, {"@type": "ListItem", "position": 11, "url": "https://www.etsy.com/listing/4616598775/dad-reindeer-shirt-with-sunglasses", "name": "Dad Reindeer Shirt with Sunglasses"}, {"@type": "ListItem", "position": 12, "url": "https://www.etsy.com/listing/4616607434/grandma-reindeer-shirt-with-glasses", "name": "Grandma Reindeer Shirt with Glasses"}, {"@type": "ListItem", "position": 13, "url": "https://www.etsy.com/listing/4616598961/grandpa-reindeer-shirt-with-mustache", "name": "Grandpa Reindeer Shirt with Mustache"}, {"@type": "ListItem", "position": 14, "url": "https://www.etsy.com/listing/4616607636/kids-reindeer-shirt-with-christmas", "name": "Kids Reindeer Shirt with Christmas Lights"}, {"@type": "ListItem", "position": 15, "url": "https://www.etsy.com/listing/4616607784/baby-reindeer-bodysuit-with-santa-hat", "name": "Baby Reindeer Bodysuit with Santa Hat"}, {"@type": "ListItem", "position": 16, "url": "https://www.etsy.com/listing/4613676372/personalized-abuela-sweatshirt-with", "name": "Personalized Abuela Sweatshirt with Grandkids Names"}, {"@type": "ListItem", "position": 17, "url": "https://www.etsy.com/listing/4614084995/custom-pet-photo-ornament-cut-to-shape", "name": "Custom Pet Photo Ornament Cut to Shape"}, {"@type": "ListItem", "position": 18, "url": "https://www.etsy.com/listing/4613777644/custom-pet-photo-ornament-2026", "name": "Custom Pet Photo Ornament 2026"}, {"@type": "ListItem", "position": 19, "url": "https://www.etsy.com/listing/4613777804/custom-pet-photo-blanket-with-name", "name": "Custom Pet Photo Blanket with Name"}, {"@type": "ListItem", "position": 20, "url": "https://www.etsy.com/listing/4613777740/custom-pet-photo-shirt-comfort-colors", "name": "Custom Pet Photo Shirt"}, {"@type": "ListItem", "position": 21, "url": "https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids", "name": "Grandma Sweatshirt with Grandkids Names on Sleeve"}, {"@type": "ListItem", "position": 22, "url": "https://www.etsy.com/listing/4613644573/personalized-grandma-sweatshirt-with", "name": "Personalized Grandma Sweatshirt with Grandkids Names"}, {"@type": "ListItem", "position": 23, "url": "https://www.etsy.com/listing/4616633125/christmas-movie-marathon-shirt-retro", "name": "Christmas Movie Marathon Shirt"}, {"@type": "ListItem", "position": 24, "url": "https://www.etsy.com/listing/4616633203/christmas-movie-marathon-sweatshirt", "name": "Christmas Movie Marathon Sweatshirt"}, {"@type": "ListItem", "position": 25, "url": "https://www.etsy.com/listing/4616526791/jolly-vibes-shirt-with-roller-skating", "name": "Jolly Vibes Shirt with Roller Skating Santa"}, {"@type": "ListItem", "position": 26, "url": "https://www.etsy.com/listing/4616536300/jolly-vibes-sweatshirt-with-roller", "name": "Jolly Vibes Sweatshirt with Roller Skating Santa"}, {"@type": "ListItem", "position": 27, "url": "https://www.etsy.com/listing/4617346356/christmas-teacher-shirt-little-elves", "name": "Christmas Teacher Shirt"}, {"@type": "ListItem", "position": 28, "url": "https://www.etsy.com/listing/4617346442/christmas-teacher-sweatshirt-little", "name": "Christmas Teacher Sweatshirt"}]}</script>
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a><nav class="nav" aria-label="Main"><a class="nav-link" href="/shop.html">Shop all</a><a class="nav-link" href="/etsy/">Etsy finds</a><a class="nav-link" href="/gifts-for-grandma.html">Grandma gifts</a><a class="nav-link" href="/custom-pet-gifts.html">Pet gifts</a><a class="nav-link" href="/regalos-para-abuela.html">Para Abuela</a><a class="btn btn-primary btn-small" href="/#videos">Videos</a></nav></div></header>
+<main>
+<section class="wrap personalized" style="padding-top:48px">
+<span class="eyebrow">As seen in our videos · Made to order in the US</span>
+<h1 style="font-size:var(--step-4);margin:8px 0 12px">Etsy finds from our videos</h1>
+<p class="sub">Saw it on TikTok, Instagram or YouTube? Find it below. Every button opens the listing directly on Etsy, where you check out securely. For Christmas delivery in the US, order by December 10.</p>
+<nav class="jump" aria-label="Jump to a video"><a class="chip" href="#chaos-crew">Holiday Chaos Crew</a><a class="chip" href="#pink-christmas">Pink Christmas gifts for her</a><a class="chip" href="#name-shirts">Matching family shirts with your names</a><a class="chip" href="#reindeer-family">Reindeer Family set</a><a class="chip" href="#abuela">Regalo para Abuela</a><a class="chip" href="#pet-gifts">Your pet&#x27;s real photo</a><a class="chip" href="#grandma">Grandma sweatshirt with every grandkid&#x27;s name</a><a class="chip" href="#new">New in the shop</a></nav>
+<section class="etsy-set" id="chaos-crew" aria-labelledby="chaos-crew-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/xnDVXopJ41U" target="_blank" rel="noopener" aria-label="Watch the video: Holiday Chaos Crew"><img src="https://i.ytimg.com/vi/xnDVXopJ41U/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="chaos-crew-t">Holiday Chaos Crew</h2>
+      <p class="sub">The funny matching family Christmas design: a frazzled gift-wrapper, a dad tangled in lights, a cookie thief and the dog.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7708262432300485901" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfwAfUCDgYi/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/xnDVXopJ41U" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#chaos-crew">accessoriex.com/etsy/#chaos-crew</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616633289/holiday-chaos-crew-shirt-funny-family" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af768b556006e5c8a0e79a7/73207/98445/holiday-chaos-crew-shirt-funny-family-christmas-tee-matching-family-christmas-shirts-cute-xmas-gift.jpg?camera_label=front" alt="Holiday Chaos Crew Shirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Holiday Chaos Crew Shirt</h3>
+        <p>Funny Family Christmas Tee</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616633289/holiday-chaos-crew-shirt-funny-family" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616633387/holiday-chaos-crew-sweatshirt-funny" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af768b70cd4ff7bf9002e27/25458/98502/holiday-chaos-crew-sweatshirt-funny-family-christmas-crewneck-matching-family-christmas-gift.jpg?camera_label=front" alt="Holiday Chaos Crew Sweatshirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Holiday Chaos Crew Sweatshirt</h3>
+        <p>Funny Family Christmas Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616633387/holiday-chaos-crew-sweatshirt-funny" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="pink-christmas" aria-labelledby="pink-christmas-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/8k0_NIITNxo" target="_blank" rel="noopener" aria-label="Watch the video: Pink Christmas gifts for her"><img src="https://i.ytimg.com/vi/8k0_NIITNxo/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="pink-christmas-t">Pink Christmas gifts for her</h2>
+      <p class="sub">A vintage pink Santa with hot cocoa, or a glam pin-up Mrs. Claus. Cozy crewnecks and tees.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7708185169043229966" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfveFQynTvx/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/8k0_NIITNxo" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#pink-christmas">accessoriex.com/etsy/#pink-christmas</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616535890/pink-coquette-santa-sweatshirt-with-hot" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743a845a65aa8f50dd9fc/25458/98502/pink-coquette-santa-sweatshirt-with-hot-cocoa-retro-christmas-crewneck-for-women-cozy-holiday-gift.jpg?camera_label=front" alt="Pink Coquette Santa Sweatshirt with Hot Cocoa, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Pink Coquette Santa Sweatshirt with Hot Cocoa</h3>
+        <p>Retro Christmas Crewneck for Women</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616535890/pink-coquette-santa-sweatshirt-with-hot" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616526597/pink-coquette-santa-shirt-with-hot-cocoa" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743a6aa7a8b17d208a63e/73207/98445/pink-coquette-santa-shirt-with-hot-cocoa-retro-christmas-tee-for-women-comfort-colors-holiday-gift.jpg?camera_label=front" alt="Pink Coquette Santa Shirt with Hot Cocoa, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Pink Coquette Santa Shirt with Hot Cocoa</h3>
+        <p>Retro Christmas Tee for Women</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616526597/pink-coquette-santa-shirt-with-hot-cocoa" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616527167/mrs-claus-sweatshirt-pink-pin-up" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743b353f1933aea037c47/25458/98502/mrs-claus-sweatshirt-pink-pin-up-christmas-crewneck-for-women-retro-holiday-gift-for-mom-or-grandma.jpg?camera_label=front" alt="Mrs Claus Sweatshirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Mrs Claus Sweatshirt</h3>
+        <p>Pink Pin Up Christmas Crewneck for Women</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616527167/mrs-claus-sweatshirt-pink-pin-up" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616536412/mrs-claus-shirt-pink-pin-up-christmas" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743b18ebc0e0a1509c713/73207/98445/mrs-claus-shirt-pink-pin-up-christmas-tee-for-women-retro-holiday-gift-for-mom-or-grandma.jpg?camera_label=front" alt="Mrs Claus Shirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Mrs Claus Shirt</h3>
+        <p>Pink Pin Up Christmas Tee for Women</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616536412/mrs-claus-shirt-pink-pin-up-christmas" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="name-shirts" aria-labelledby="name-shirts-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/1RLy_R3bYW4" target="_blank" rel="noopener" aria-label="Watch the video: Matching family shirts with your names"><img src="https://i.ytimg.com/vi/1RLy_R3bYW4/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="name-shirts-t">Matching family shirts with your names</h2>
+      <p class="sub">Everyone&#x27;s name under a Santa hat, printed exactly how you type it. Adult, kids and baby sizes.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7708092384558484749" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dfu04nHlBp1/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/1RLy_R3bYW4" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#name-shirts">accessoriex.com/etsy/#name-shirts</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616599327/custom-name-christmas-shirt-with-santa" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cbcc1e040f12b0a80ca/18102/102044/custom-name-christmas-shirt-with-santa-hat-matching-family-christmas-tee-personalized-holiday-shirt.jpg?camera_label=front-2" alt="Custom Name Christmas Shirt with Santa Hat, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Custom Name Christmas Shirt with Santa Hat</h3>
+        <p>Adults</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$29.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616599327/custom-name-christmas-shirt-with-santa" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616607932/kids-custom-name-christmas-shirt-with" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cbfdbddd3ec260ca4e3/61519/94623/kids-custom-name-christmas-shirt-with-santa-hat-matching-family-christmas-tee-personalized-youth.jpg?camera_label=front" alt="Kids Custom Name Christmas Shirt with Santa Hat, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Kids Custom Name Christmas Shirt with Santa Hat</h3>
+        <p>Kids</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$24.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616607932/kids-custom-name-christmas-shirt-with" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616608044/baby-name-christmas-bodysuit-with-santa" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cc2dbddd3ec260ca4e7/120468/67/baby-name-christmas-bodysuit-with-santa-hat-personalized-babys-first-christmas-matching-family-outfit.jpg?camera_label=front" alt="Baby Name Christmas Bodysuit with Santa Hat, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Baby Name Christmas Bodysuit with Santa Hat</h3>
+        <p>Baby bodysuit</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$23.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616608044/baby-name-christmas-bodysuit-with-santa" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="reindeer-family" aria-labelledby="reindeer-family-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/mqfzQRMqUuQ" target="_blank" rel="noopener" aria-label="Watch the video: Reindeer Family set"><img src="https://i.ytimg.com/vi/mqfzQRMqUuQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="reindeer-family-t">Reindeer Family set</h2>
+      <p class="sub">A reindeer for everyone: Mom gets the bow, Dad the shades, Grandma the glasses, Grandpa the mustache, the kids the lights and baby a tiny Santa hat.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7707829515682204941" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DftAJ7GFfKO/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/mqfzQRMqUuQ" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#reindeer-family">accessoriex.com/etsy/#reindeer-family</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616598715/mom-reindeer-shirt-with-bow-matching" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75c9a0efbcd8aa2094285/18542/102044/mom-reindeer-shirt-with-bow-matching-family-christmas-tee-for-women-cute-mama-deer-holiday-gift.jpg?camera_label=front-2" alt="Mom Reindeer Shirt with Bow, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Mom Reindeer Shirt with Bow</h3>
+        <p>Mom</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$27.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616598715/mom-reindeer-shirt-with-bow-matching" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616598775/dad-reindeer-shirt-with-sunglasses" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75ca80efbcd8aa2094297/18542/102044/dad-reindeer-shirt-with-sunglasses-matching-family-christmas-tee-for-men-funny-papa-deer-gift.jpg?camera_label=front-2" alt="Dad Reindeer Shirt with Sunglasses, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Dad Reindeer Shirt with Sunglasses</h3>
+        <p>Dad</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$27.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616598775/dad-reindeer-shirt-with-sunglasses" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616607434/grandma-reindeer-shirt-with-glasses" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cad72c3dfd8520d400d/18542/102044/grandma-reindeer-shirt-with-glasses-matching-family-christmas-tee-cute-nana-deer-holiday-gift.jpg?camera_label=front-2" alt="Grandma Reindeer Shirt with Glasses, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Grandma Reindeer Shirt with Glasses</h3>
+        <p>Grandma</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$27.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616607434/grandma-reindeer-shirt-with-glasses" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616598961/grandpa-reindeer-shirt-with-mustache" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cb145a65aa8f50df4d8/18542/102044/grandpa-reindeer-shirt-with-mustache-matching-family-christmas-tee-funny-papa-deer-holiday-gift.jpg?camera_label=front-2" alt="Grandpa Reindeer Shirt with Mustache, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Grandpa Reindeer Shirt with Mustache</h3>
+        <p>Grandpa</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$27.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616598961/grandpa-reindeer-shirt-with-mustache" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616607636/kids-reindeer-shirt-with-christmas" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cb5c1e040f12b0a80c7/61520/94623/kids-reindeer-shirt-with-christmas-lights-matching-family-christmas-tee-youth-holiday-shirt.jpg?camera_label=front" alt="Kids Reindeer Shirt with Christmas Lights, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Kids Reindeer Shirt with Christmas Lights</h3>
+        <p>Kids</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$22.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616607636/kids-reindeer-shirt-with-christmas" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616607784/baby-reindeer-bodysuit-with-santa-hat" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af75cb738951948c7005b71/31436/67/baby-reindeer-bodysuit-with-santa-hat-matching-family-christmas-outfit-babys-first-christmas.jpg?camera_label=front" alt="Baby Reindeer Bodysuit with Santa Hat, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Baby Reindeer Bodysuit with Santa Hat</h3>
+        <p>Baby bodysuit</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616607784/baby-reindeer-bodysuit-with-santa-hat" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="abuela" aria-labelledby="abuela-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/SE_gO-uhktQ" target="_blank" rel="noopener" aria-label="Watch the video: Regalo para Abuela"><img src="https://i.ytimg.com/vi/SE_gO-uhktQ/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="abuela-t">Regalo para Abuela</h2>
+      <p class="sub">La sudadera con el nombre de cada nieto.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7706972248350952718" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DfnDTSugMcR/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/SE_gO-uhktQ" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#abuela">accessoriex.com/etsy/#abuela</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613676372/personalized-abuela-sweatshirt-with" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af2661f8fcf10786f065650/25458/98502/personalized-abuela-sweatshirt-with-grandkids-names-custom-abuela-crewneck.jpg?camera_label=front" alt="Personalized Abuela Sweatshirt with Grandkids Names, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Personalized Abuela Sweatshirt with Grandkids Names</h3>
+        <p>Custom Abuela Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613676372/personalized-abuela-sweatshirt-with" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="pet-gifts" aria-labelledby="pet-gifts-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/YjQU_HKJ9AY" target="_blank" rel="noopener" aria-label="Watch the video: Your pet&#x27;s real photo"><img src="https://i.ytimg.com/vi/YjQU_HKJ9AY/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="pet-gifts-t">Your pet&#x27;s real photo</h2>
+      <p class="sub">Your dog or cat&#x27;s real photo on an ornament, a blanket or a shirt.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7706710387747491086" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/DflPL9Xl9uw/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/YjQU_HKJ9AY" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#pet-gifts">accessoriex.com/etsy/#pet-gifts</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4614084995/custom-pet-photo-ornament-cut-to-shape" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af3365a14200178c706db8b/112676/134998/custom-pet-photo-ornament-cut-to-shape-dog-or-cat-name-acrylic-2026.jpg?camera_label=front" alt="Custom Pet Photo Ornament Cut to Shape, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Custom Pet Photo Ornament Cut to Shape</h3>
+        <p>Dog or Cat Name, Acrylic 2026</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4614084995/custom-pet-photo-ornament-cut-to-shape" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777644/custom-pet-photo-ornament-2026" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af296f53cb8f0f1c803df66/111948/111822/custom-pet-photo-ornament-2026-personalized-dog-or-cat-name-ceramic-keepsake.jpg?camera_label=front" alt="Custom Pet Photo Ornament 2026, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Custom Pet Photo Ornament 2026</h3>
+        <p>Personalized Dog or Cat Name, Ceramic Keepsake</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$21.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777644/custom-pet-photo-ornament-2026" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777804/custom-pet-photo-blanket-with-name" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af297115a350ce2a10252a7/68324/9077/custom-pet-photo-blanket-with-name-personalized-dog-or-cat-plush-throw.jpg?camera_label=front" alt="Custom Pet Photo Blanket with Name, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Custom Pet Photo Blanket with Name</h3>
+        <p>Personalized Dog or Cat Plush Throw</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$49.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777804/custom-pet-photo-blanket-with-name" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613777740/custom-pet-photo-shirt-comfort-colors" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af2970d0e1ec3019d096e84/73207/98445/custom-pet-photo-shirt-comfort-colors-dog-portrait-tee-with-name.jpg?camera_label=front" alt="Custom Pet Photo Shirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Custom Pet Photo Shirt</h3>
+        <p>Comfort Colors Dog Portrait Tee with Name</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$29.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613777740/custom-pet-photo-shirt-comfort-colors" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="grandma" aria-labelledby="grandma-t">
+  <div class="set-head">
+    <a class="set-vid" href="https://www.youtube.com/shorts/vF-6XS3hALU" target="_blank" rel="noopener" aria-label="Watch the video: Grandma sweatshirt with every grandkid&#x27;s name"><img src="https://i.ytimg.com/vi/vF-6XS3hALU/hqdefault.jpg" alt="" width="480" height="360" loading="lazy"><span class="vid-play" aria-hidden="true"></span></a>
+    <div>
+      <h2 id="grandma-t">Grandma sweatshirt with every grandkid&#x27;s name</h2>
+      <p class="sub">Every grandkid&#x27;s name, right down Grandma&#x27;s sleeve.</p>
+      <p class="set-watch">Watch the video: <a href="https://www.tiktok.com/@accessoriex1/video/7706600744966688014" target="_blank" rel="noopener">TikTok</a> &middot; <a href="https://www.instagram.com/reel/Dfkef7biWr3/" target="_blank" rel="noopener">Instagram</a> &middot; <a href="https://www.youtube.com/shorts/vF-6XS3hALU" target="_blank" rel="noopener">YouTube</a></p>
+      <p class="set-link">Direct link: <a href="#grandma">accessoriex.com/etsy/#grandma</a></p>
+    </div>
+  </div>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af25510d54c0aed2a07e85b/25458/98502/grandma-sweatshirt-with-grandkids-names-on-sleeve-personalized-crewneck.jpg?camera_label=front" alt="Grandma Sweatshirt with Grandkids Names on Sleeve, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Grandma Sweatshirt with Grandkids Names on Sleeve</h3>
+        <p>Personalized Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$49.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613660148/custom-grandma-sweatshirt-with-grandkids" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4613644573/personalized-grandma-sweatshirt-with" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af255136060004898045f96/25458/98502/personalized-grandma-sweatshirt-with-grandkids-names-custom-nana-crewneck.jpg?camera_label=front" alt="Personalized Grandma Sweatshirt with Grandkids Names, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Personalized Grandma Sweatshirt with Grandkids Names</h3>
+        <p>Custom Nana Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4613644573/personalized-grandma-sweatshirt-with" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<section class="etsy-set" id="new" aria-labelledby="new-t">
+  <h2 id="new-t">New in the shop</h2>
+  <p class="sub">Just added, not in a video yet.</p>
+  <div class="pgift-grid">
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616633125/christmas-movie-marathon-shirt-retro" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af768b10efbcd8aa2094d49/73207/98445/christmas-movie-marathon-shirt-retro-holiday-movie-night-tee-matching-family-christmas-shirt-cozy-gift.jpg?camera_label=front" alt="Christmas Movie Marathon Shirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Christmas Movie Marathon Shirt</h3>
+        <p>Retro Holiday Movie Night Tee</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616633125/christmas-movie-marathon-shirt-retro" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616633203/christmas-movie-marathon-sweatshirt" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af768b3402938d2d305a200/25458/98502/christmas-movie-marathon-sweatshirt-retro-holiday-movie-night-crewneck-matching-family-christmas-gift.jpg?camera_label=front" alt="Christmas Movie Marathon Sweatshirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Christmas Movie Marathon Sweatshirt</h3>
+        <p>Retro Holiday Movie Night Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616633203/christmas-movie-marathon-sweatshirt" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616526791/jolly-vibes-shirt-with-roller-skating" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743ab8ebc0e0a1509c706/73207/98445/jolly-vibes-shirt-with-roller-skating-santa-retro-70s-christmas-tee-pink-groovy-holiday-gift-for-her.jpg?camera_label=front" alt="Jolly Vibes Shirt with Roller Skating Santa, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Jolly Vibes Shirt with Roller Skating Santa</h3>
+        <p>Retro 70s Christmas Tee</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616526791/jolly-vibes-shirt-with-roller-skating" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4616536300/jolly-vibes-sweatshirt-with-roller" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af743aedf0eb60f92095439/25458/98502/jolly-vibes-sweatshirt-with-roller-skating-santa-retro-70s-christmas-crewneck-pink-groovy-gift.jpg?camera_label=front" alt="Jolly Vibes Sweatshirt with Roller Skating Santa, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Jolly Vibes Sweatshirt with Roller Skating Santa</h3>
+        <p>Retro 70s Christmas Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4616536300/jolly-vibes-sweatshirt-with-roller" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4617346356/christmas-teacher-shirt-little-elves" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af8b605383728621d00c1af/73207/98445/christmas-teacher-shirt-little-elves-holiday-tee-comfort-colors-xmas-gift-for-kindergarten-educator.jpg?camera_label=front" alt="Christmas Teacher Shirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Christmas Teacher Shirt</h3>
+        <p>Little Elves Holiday Tee</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$31.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4617346356/christmas-teacher-shirt-little-elves" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+      <article class="pgift">
+        <a class="pgift-img" href="https://www.etsy.com/listing/4617346442/christmas-teacher-sweatshirt-little" target="_blank" rel="noopener"><img src="https://images.printify.com/mockup/6af8b608a62de2d61c0bdea3/25458/98502/christmas-teacher-sweatshirt-little-elves-holiday-crewneck-cozy-xmas-gift-for-kindergarten-educator.jpg?camera_label=front" alt="Christmas Teacher Sweatshirt, product mockup" width="600" height="600" loading="lazy"></a>
+        <h3>Christmas Teacher Sweatshirt</h3>
+        <p>Little Elves Holiday Crewneck</p>
+        <div class="pgift-foot"><span class="price"><small>From</small>$39.99</span><a class="btn btn-primary btn-small" href="https://www.etsy.com/listing/4617346442/christmas-teacher-sweatshirt-little" target="_blank" rel="noopener">Shop on Etsy</a></div>
+      </article>
+  </div>
+</section>
+<div class="etsy-cta"><a class="btn btn-primary" href="/shop.html">See all our personalized gifts</a></div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="footer-top"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span>Accessoriex</a><div class="footer-links"><a href="/shop.html">Shop all</a><a href="/etsy/">Etsy finds from our videos</a><a href="/#videos">Videos</a><a href="/gifts-for-grandma.html">Gifts for Grandma</a><a href="/custom-pet-gifts.html">Custom pet gifts</a><a href="/regalos-para-abuela.html">Regalos para Abuela</a></div></div><div class="legal"><p>Our own designs, sold through our Etsy shop and made to order by our US print partner. Photos are product mockups; names shown are examples.</p><p>© 2026 Accessoriex</p></div></div></footer>
+</body>
+</html>
