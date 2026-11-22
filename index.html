@@ -696,7 +696,8 @@ tr:last-child td { border-bottom: 0; }
               </div>
               <div class="pick-side">
                 <div class="price"><small>Govee list price</small>$79.99</div>
-                <a class="btn btn-primary btn-small" data-product="lamp" href="#weekly">Buy on Amazon</a>
+                <a class="btn btn-primary btn-small" data-product="lamp" href="#weekly">Buy at Govee</a>
+                <a class="btn btn-ghost btn-small" data-product="lamp_amazon" href="#weekly">Amazon</a>
                 <a class="btn btn-ghost btn-small" data-tiktok="lamp" href="#weekly">TikTok Shop</a>
               </div>
             </div>
@@ -807,7 +808,7 @@ tr:last-child td { border-bottom: 0; }
       </div>
     </div>
     <div class="legal">
-      <p>Affiliate disclosure: Accessoriex earns commissions from qualifying purchases made through links on this site, including through the TikTok Shop affiliate program. As an Amazon Associate we earn from qualifying purchases.</p>
+      <p>Affiliate disclosure: Accessoriex earns commissions from qualifying purchases made through links on this site, including through the TikTok Shop and Govee affiliate programs. As an Amazon Associate we earn from qualifying purchases.</p>
       <p>Sales rankings are estimates from FastMoss US TikTok Shop reports for Q1 to Q3 2026. Prices change; the retailer's page is always the final word.</p>
       <p>Personalized gifts are designed by Accessoriex and sold through our Etsy shop; they are not affiliate products. Their photos are product mockups.</p>
       <p>Photography on this site is AI-generated styling, not photos of the listed products. Videos on our social channels may feature an AI presenter and are labeled as AI-generated.</p>
@@ -825,7 +826,8 @@ const AFFILIATE_LINKS = {
   blanket: "",                                                   // Comfrt isn't sold on Amazon; add TikTok Shop link later
   magnesium: "https://www.amazon.com/dp/B0CRY2SVPV?tag=zity-20", // Toplux Magnesium Complex 8 Elemental
   collagen: "https://www.amazon.com/s?k=NeoCell+Grassfed+Collagen+Bio-Peptides+20+oz&tag=zity-20",   // Amazon search (tagged) for the 20 oz tub shown in the videos
-  lamp: "https://www.amazon.com/dp/B0D41XL87F?tag=zity-20",   // Govee RGBIC Smart Table Lamp 2 (H6022)
+  lamp: "https://govee.sjv.io/c/8146153/970740/12845?u=https%3A%2F%2Fus.govee.com%2Fproducts%2Fled-table-lamp-2", // Govee Table Lamp 2 (H6022) on us.govee.com via Govee affiliate (Impact) deep link
+  lamp_amazon: "https://www.amazon.com/dp/B0D41XL87F?tag=zity-20", // same lamp on Amazon (backup button)
   caddy: "https://www.amazon.com/s?k=Kitsch+Self-Draining+Shower+Caddy&tag=zity-20"   // ASIN not confirmed; tagged search
 };
 // 2) TikTok Shop. Until you have Showcase links, every TikTok button opens your profile (it also grows followers toward the 1,000 gate).
